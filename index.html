@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilo.css">
+    <title>RentACar</title>
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+            <img src="images/logo.png" class="logo">
+            <nav>
+                <!-- El id menuList se requiere para la funcion onclick() -->
+                <ul id="menuList">
+                    <li><a href="">Inicio</a></li>
+                    <li><a href="">Renta</a></li>
+                    <li><a href="">Nosotros</a></li>
+                    <li><a href="">Contacto</a></li>
+                </ul>
+            </nav>
+            <img src="images/menu.png" class="menu-icon" onclick="togglemenu()">
+        </div>
+        
+    <section class="contenido">
+        <div class="mostrador" id="mostrador">
+            <h1>¿Qué vehículo deseas rentar el día de hoy?</h1>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/1.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">CARRO</p>
+                    <span class="precio">$ 1.300</span>
+                    <button class="boton1">Rentar</button>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/2.jpeg" alt="">
+                    </div>
+                    <p class="descripcion" id>CARRO </p>
+                    <span class="precio">$ 1.300</span>
+                    <button class="boton1">Rentar</button>
+
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/3.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">CARRO
+                    </p>
+                    <span class="precio">$ 1.300</span>
+                    <button class="boton1">Rentar</button>
+
+                    
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/4.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">CARRO</p>
+                    <span class="precio">$ 1.300</span>
+                    <button class="boton1">Rentar</button>
+
+                </div>
+            </div>
+            <div class="fila">
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/5.jpeg" alt="">
+                </div>
+                    <p class="descripcion">CARRO</p>
+                    <span class="precio">$ 1.300</span>
+                    <button class="boton1">Rentar</button>
+
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/6.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">CARRO</p>
+                    <span class="precio">$ 1.300</span>
+                    <button class="boton1">Rentar</button>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/7.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">CARRO</p>
+                    <span class="precio">$ 1.300</span>
+                    <button class="boton1">Rentar</button>
+                </div>
+                <div class="item" onclick="cargar(this)">
+                    <div class="contenedor-foto">
+                        <img src="images/8.jpeg" alt="">
+                    </div>
+                    <p class="descripcion">CARRO</p>
+                    <span class="precio">$ 1.300</span>
+                    <button class="boton1">Rentar</button>
+
+                </div>
+            </div> 
+        </div>
+        <!-- CONTENEDOR DEL ITEM SELECCIONADO -->
+        <div class="seleccion" id="seleccion">
+            <div class="cerrar" onclick="cerrar()">
+                &#x2715
+            </div>
+            <div class="info">
+                <img src="img/1.png" alt="" id="img">
+                <h2 id="modelo">CARRO</h2>
+                <p id="descripcion">Descripción Modelo 1</p>
+
+                <span class="precio" id="precio">$ 1.300</span>
+
+                <div class="fila">
+                    <div class="size">
+                        <label for="">DÍAS</label>
+                        <select name="" id="">
+                            <option value="">1</option>
+                            <option value="">2</option>
+                            <option value="">3</option>
+                            <option value="">4</option>
+                        </select>
+                    </div>
+                    <button onclick="mostrarPopup()">RESERVAR</button>
+                </div>
+                <div id="miPopup" class="popup">
+                    <p>RESERVA CONFIRMADA</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer">
+        <div class="row">
+        <a href="#"><i class="fa fa-facebook"></i></a>
+        <a href="#"><i class="fa fa-instagram"></i></a>
+        <a href="#"><i class="fa fa-youtube"></i></a>
+        <a href="#"><i class="fa fa-twitter"></i></a>
+        </div>
+        
+        <div class="row">
+        <ul>
+        <li><a href="#">Contáctanos</a></li>
+        <li><a href="#">Nuestros servicios</a></li>
+        <li><a href="#">Políticas de privacidad</a></li>
+        <li><a href="#">Términos y condiciones</a></li>
+        </ul>
+        </div>
+        
+        <div class="row">
+       Copyright ©  All rights reserved || 
+        </div>
+        </div>
+        </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
